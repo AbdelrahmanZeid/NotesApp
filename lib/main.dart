@@ -1,19 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:note_app/view/notes_view.dart';
 
 void main() {
-  runApp( NoteApp());
+  runApp(NoteApp());
 }
 
-class  NoteApp extends StatelessWidget {
-   
+class NoteApp extends StatelessWidget {
+  NoteApp({super.key});
 
   
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(),
+      home: NotesView(),
+      theme: ThemeData.light(),
     );
-      
   }
 }
