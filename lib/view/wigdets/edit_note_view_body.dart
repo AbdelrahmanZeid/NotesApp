@@ -6,10 +6,14 @@ class EdiNoteViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        CustomAppBar(),
-      ],
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 12,  ),
+      child: Column(
+        children: [
+          SizedBox(height: 30,),
+          CustomAppBar(title: 'Edit Note',icon: Icons.check,),
+        ],
+      ),
     );
   }
 }
