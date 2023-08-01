@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:hive/hive.dart';
 import 'package:note_app/view/notes_view.dart';
 
 void main() {
+
+   
   runApp(NoteApp());
 }
 
